@@ -11,5 +11,7 @@ export class TransactionService {
     private readonly transactionRepository: typeof Transaction,
   ) {}
 
-  
+  async create(transactionDto: TransactionDto) {
+    return await this.transactionRepository.create(transactionDto);
+  }
 }

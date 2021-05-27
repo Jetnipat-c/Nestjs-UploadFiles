@@ -47,13 +47,11 @@ export class TransactionDto {
 
     @IsNotEmpty()
     @ApiProperty()
-    area: string;
-
-    @IsNotEmpty()
-    @ApiProperty()
     province: string;
 
-//     @IsNotEmpty()
-//     @ApiProperty()
-//     images: string;
+    @ApiProperty()
+    main_img: any
+
+    @ApiProperty()
+    gallary: any
 }

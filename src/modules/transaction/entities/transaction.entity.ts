@@ -67,8 +67,16 @@ export class Transaction extends Model<Transaction>{
     @Column
     province: string
 
+    @AllowNull(false)
+    @Column
+    main_img: string
+
+    @AllowNull(false)
+    @Column
+    gallary: string
+
     // has Many 1 to mayny
 
-    @HasMany(() => Images)
-    images: Images[];
+    // @HasMany(() => Images)
+    // images: Images[];
 }
