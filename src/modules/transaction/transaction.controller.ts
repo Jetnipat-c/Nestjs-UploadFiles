@@ -9,6 +9,7 @@ import {
   Query,
   UseInterceptors,
   UploadedFiles,
+  Res,
 } from '@nestjs/common';
 import { TransactionService } from './transaction.service';
 import { TransactionDto } from './dto/transaction.dto';
@@ -50,5 +51,10 @@ export class TransactionController {
     transactionDto.gallary = JSON.stringify(queryTemp);
     console.log(transactionDto);
     return this.transactionService.create(transactionDto);
+  }
+
+  @Get('/:imgpath')
+  findImd(@Param('imgpath') image, @Res() res){
+    return res.sendFile(image, { root: 'upload'})
   }
 }

@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "f7c68fbb-32a5-42ba-8176-6bcb4926d141",
+		"name": "StarealV2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "บ้านใหม่ ใกล้แม่น้ำ",
+							"type": "text"
+						},
+						{
+							"key": "detail",
+							"value": "บ้านใหม่ ใกล้แม่น้ำ สวยสะอาด พื้นที่ 1 แปลง",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "500000",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "บ้านแฝด",
+							"type": "text"
+						},
+						{
+							"key": "bedroom",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "toilet",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "parking",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "pool",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "conditioners",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "security",
+							"value": "รปภ.",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "ใกล้ รร ...",
+							"type": "text"
+						},
+						{
+							"key": "province",
+							"value": "ภูเก็ต",
+							"type": "text"
+						},
+						{
+							"key": "main_img",
+							"type": "file",
+							"src": "/C:/Jetnipat/Project Stareal Estate/stareal-estare-frontend/public/Teeraphat-Sittinantakul.pdf"
+						},
+						{
+							"key": "gallary",
+							"type": "file",
+							"src": [
+								"/C:/Jetnipat/Project Stareal Estate/stareal-estare-frontend/public/home2.jpg",
+								"/C:/Jetnipat/Project Stareal Estate/stareal-estare-frontend/public/home3.jpg"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/transaction/add",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"transaction",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get img",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/transaction/home2-2852021-03145-5564.jpg",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"transaction",
+						"home2-2852021-03145-5564.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
